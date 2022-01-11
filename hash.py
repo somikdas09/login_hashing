@@ -57,13 +57,3 @@ def hash_compare(message1,message2):
     else:
         return 0        
 
-if __name__ == '__main__':
-    verdict = 'y'
-    while verdict == 'y':
-        input_message1 = input('Type or copy your message1 here: ')
-        input_message2 = input('Type or copy your message2 here: ')
-        if(hash_compare(input_message1,input_message2)):
-            print('yes')
-        else:
-            print('no')    
-        verdict = input('Do you want to try another text? (y/n): ').lower()
